@@ -1,0 +1,64 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Grid System
+						small 12 columns for super fast use
+					p Use
+						code .grid
+						| +
+						code .g-x-12
+						|  for the magic
+					.row.centered
+						each i in new Array(12)
+							.grid.g-1-12(style="background-color: #eeeeee;") .g-1-12
+					.row.centered
+						each i in new Array(6)
+							.grid.g-2-12(style="background-color: #eeeeee;") .g-2-12
+					.row.centered
+						each i in new Array(4)
+							.grid.g-3-12(style="background-color: #eeeeee;") .g-3-12
+					.row.centered
+						each i in new Array(3)
+							.grid.g-4-12(style="background-color: #eeeeee;") .g-4-12
+
+					.row.centered
+						.grid.g-5-12(style="background-color: #eeeeee;") .g-5-12
+						.grid.g-7-12(style="background-color: #eeeeee;") .g-7-12
+
+					.row.centered
+						.grid.g-6-12(style="background-color: #eeeeee;") .g-6-12
+						.grid.g-6-12(style="background-color: #eeeeee;") .g-6-12
+
+					.row.centered
+						.grid.g-6-12(style="background-color: #eeeeee;")
+							.row.centered
+								.grid.g-6-12(style="background-color: #dddddd;") &nbsp;
+								.grid.g-6-12(style="background-color: #dddddd;")
+									.row.centered
+										.grid.g-6-12(style="background-color: #cccccc;") .g-6-12
+										.grid.g-6-12(style="background-color: #cccccc;") .g-6-12
+						.grid.g-6-12(style="background-color: #eeeeee;")
+							.row.centered
+								.grid.g-6-12(style="background-color: #dddddd;") &nbsp;
+								.grid.g-6-12(style="background-color: #dddddd;")
+									.row.centered
+										.grid.g-6-12(style="background-color: #cccccc;") .g-6-12
+										.grid.g-6-12(style="background-color: #cccccc;") .g-6-12
+					
+					pre
+						code.language-jade.
+							.row
+								.grid.g-6-12
+								.grid.g-6-12
+
+			
+								

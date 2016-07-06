@@ -1,0 +1,2 @@
+//Tabber Trigger
+$('#tabber').tabber();

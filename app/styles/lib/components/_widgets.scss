@@ -1,0 +1,53 @@
+.widgets {
+
+}
+
+.widget-block {
+	margin-bottom: 1em;
+	box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+	background-color: $white;
+	.widget-title {
+		box-sizing: border-box;
+		padding: 1rem 1rem;
+		border-bottom: 1px solid $lightgray;
+		// background-color: $smokygray;
+		// box-shadow: inset 0 -5px 6px -3px rgba($black, .1);
+		color: $black;
+		font-size: 1.1em;
+		font-weight: 600;
+	}
+	.widget-content {
+		box-sizing: border-box;
+		padding: .5rem 1rem;
+		// background-color: $white;
+		// box-shadow: 0 3px 3px -3px rgba(0,0,0,0.33);
+	}
+	.widget-footer {
+		box-sizing: border-box;
+		padding: 1rem 1rem;
+		color: $black;
+		font-weight: 600;
+	}
+}
+
+
+/**********************************/
+/**********WIDGET HELPERS*********/
+/**********************************/
+
+.widget-content {
+	&.--no-padding {
+		padding: 0;
+	}
+}
+
+
+/**********************************/
+/**********WIDGET SITUATIONS*********/
+/**********************************/
+
+.modal {
+	.widget-block {
+		margin: 0;
+	}
+}

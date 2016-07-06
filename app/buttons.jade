@@ -1,0 +1,20 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			include layouts/breadcrumb
+			section
+				.container
+					.row
+						a.btn.basic(href="javascript:;") default
+						a.btn.edit(href="javascript:;") edit
+						a.btn.delete(href="javascript:;") delete
+						a.btn.cancel(href="javascript:;") cancel
+						a.btn.basic.full(href="javascript:;") full width
+						a.btn.basic.disabled(href="javascript:;") disabled

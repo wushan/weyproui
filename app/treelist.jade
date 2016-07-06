@@ -1,0 +1,21 @@
+extends layouts/default
+include layouts/mixin/_mixin
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Tree List
+					h5 Gallery Sizes
+					ul.tree-list
+						each i in Array(10)
+							li
+								a(href='javascript:;') ITEM LV1
+								ul
+									each i in Array(6)
+										li
+											a(href='javascript:;') ITEM LV2

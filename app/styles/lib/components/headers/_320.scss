@@ -1,0 +1,47 @@
+/******************************
+************HEADER************
+******************************/
+header {
+	.header-inner {
+		position: relative;
+		background-color: $main;
+		width: 100%;
+		z-index: 10;
+		@extend .clr;
+	}
+	.is-sticky {
+		.header-inner {
+			box-shadow: 0 0 3px rgba($black,.66);
+		}
+	}
+	.head-bar {
+		padding: .5em;
+		background-color: shade($main, 30%);
+		@extend .clr;
+	}
+	#brand {
+		@include span(6 of 12);
+		h6 {
+			color: $white;
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: 300;	
+		}
+		img {
+			margin: 0;
+		}
+	}
+	#miscellaneous {
+		text-align: right;
+		color: $white;
+		@include span(6 of 12 last);
+	}
+	//mobileMenu-trigger
+	#mobileMenu-trigger {
+		display: inline-block;
+		vertical-align: middle;
+		color: $white;
+		padding: 10px;
+	}
+}

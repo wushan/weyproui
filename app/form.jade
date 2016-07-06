@@ -1,0 +1,204 @@
+extends layouts/default
+include layouts/mixin/_mixin
+block content
+	section
+		.container.restrict
+			h1 Form
+			h5 Inputs
+			input(type='text' placeholder='text')
+			input(type='email' placeholder='email')
+			input(type='password' placeholder='password')
+			input(type='color' placeholder='color')
+			input(type='date' placeholder='date')
+			input(type='datetime' placeholder='datetime')
+			input(type='number' placeholder='number')
+			input(type='tel' placeholder='tel')
+			input(type='time' placeholder='time')
+			input(type='url' placeholder='url')
+			input(type='week' placeholder='week')
+			pre
+				code.language-jade.
+					input(type='text', placeholder='text')
+			input(type='text', placeholder='text', readonly)
+			pre
+				code.language-jade.
+					input(type='text', placeholder='text', readonly)
+			input#file(type="file", name="file", placeholder="file")
+			label(for="file")
+				.filename
+				span Choose a file
+			pre
+				code.language-jade.
+					input#file(type="file", name="file", placeholder="file")
+					label(for="file")
+						.filename
+						span Choose a file
+			h5 Select
+			.controlgroup
+				.select-wrapper
+					select
+						option option
+						option option
+						option option
+			pre
+				code.language-jade.
+					.controlgroup
+						.select-wrapper
+							select
+								option //options
+								option //options
+								option //options
+			.row
+				.grid.g-6-12
+					.controlgroup
+						.select-wrapper
+							select
+								option option
+								option option
+								option option
+					pre
+						code.language-jade.
+							.grid.g-6-12
+								.controlgroup
+									.select-wrapper
+										select
+											option option
+											option option
+											option option
+				.grid.g-4-12
+					.controlgroup
+						.select-wrapper
+							select
+								option option
+								option option
+								option option
+					pre
+						code.language-jade.
+							.grid.g-4-12
+								.controlgroup
+									.select-wrapper
+										select
+											option option
+											option option
+											option option
+				.grid.g-2-12
+					.controlgroup
+						.select-wrapper
+							select
+								option option
+								option option
+								option option
+					pre
+						code.language-jade.
+							.grid.g-2-12
+								.controlgroup
+									.select-wrapper
+										select
+											option option
+											option option
+											option option
+			
+			h5 Form Elements With Label ( controlgroup )
+			.controlgroup
+				label NAME：
+				.controls
+					input(type='text' placeholder='text')
+			.controlgroup
+				label E-Mail：
+				.controls
+					input(type='text' placeholder='text')
+			.controlgroup
+				label Address：
+				.controls
+					input(type='text' placeholder='text')
+			pre
+				code.language-jade.
+					.controlgroup
+						label NAME：
+						.controls
+							input(type='text' placeholder='text')
+					.controlgroup
+						label E-Mail：
+						.controls
+							input(type='text' placeholder='text')
+					.controlgroup
+						label Address：
+						.controls
+							input(type='text' placeholder='text')
+			.row
+				.grid.g-6-12
+					.controlgroup
+						label Gender：
+						.controls.check-group
+							.check-item
+								input#rmale(type='radio' name='gender')
+								label(for='rmale') Male
+							.check-item
+								input#rfemale(type='radio' name='gender')
+								label(for='rfemale') Female
+				.grid.g-6-12
+					.controlgroup
+						label Gender：
+						.controls.check-group
+							.check-item
+								input#male(type='checkbox' name='gender')
+								label(for='male') Male
+							.check-item
+								input#female(type='checkbox' name='gender')
+								label(for='female') Female
+			pre
+				code.language-jade.
+					.row
+						.grid.g-6-12
+							.controlgroup
+								label Gender：
+								.controls.check-group
+									.check-item
+										input#rmale(type='radio' name='gender')
+										label(for='rmale') Male
+									.check-item
+										input#rfemale(type='radio' name='gender')
+										label(for='rfemale') Female
+						.grid.g-6-12
+							.controlgroup
+								label Gender：
+								.controls.check-group
+									.check-item
+										input#male(type='checkbox' name='gender')
+										label(for='male') Male
+									.check-item
+										input#female(type='checkbox' name='gender')
+										label(for='female') Female
+			.controlgroup
+				label Country：
+				.controls
+					.select-wrapper
+							select
+								option option
+								option option
+								option option
+			pre
+				code.language-jade.
+					.controlgroup
+						label Country：
+						.controls
+							.select-wrapper
+								select
+									option option
+									option option
+									option option
+			textarea(placeholder='some text here')
+			pre
+				code.language-jade.
+					textarea(placeholder='some text here')
+
+			.controlgroup
+				label Messages：
+				.controls
+					textarea(placeholder='some text here')
+			pre
+				code.language-jade.
+					.controlgroup
+						label Messages：
+						.controls
+							textarea(placeholder='some text here')

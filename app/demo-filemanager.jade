@@ -1,0 +1,78 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			include layouts/breadcrumb
+			section
+				.container
+					.row
+						.grid.g-2-12
+							.widget-block
+								.widget-title 節目目錄
+								.widget-content
+									ul.tree-list
+										li
+											a(href='javascript:;') 資料夾名稱
+											ul
+												li
+													a(href='javascript:;') 資料夾名稱
+										li
+												a.active(href='javascript:;') 資料夾名稱
+												ul
+													li
+														a(href='javascript:;') 資料夾名稱
+													li
+														a(href='javascript:;') 資料夾名稱
+													li
+														a(href='javascript:;') 資料夾名稱
+										li
+												a(href='javascript:;') 資料夾名稱
+										li
+												a(href='javascript:;') 資料夾名稱
+										li
+												a(href='javascript:;') 資料夾名稱
+							.widget-block
+								.widget-title 輪播群組
+								.widget-content
+									.controlgroup
+										.select-wrapper
+											select
+												option 群組名稱 A
+												option 群組名稱 B
+												option 群組名稱 C
+										a.btn.full(href='javascript:;') 新增群組
+
+						.grid.g-10-12
+							.widget-block
+								.widget-title 節目列表
+								.widget-content
+									table.rowed.table-hover.list-table
+										thead
+											tr.centered
+												th(width='5%') 輪播
+												th(width='5%') ID	
+												th(width='6%') 播放狀態
+												th(width='40%') 節目名稱
+												th(width='15%') 解析度
+												th(width='17%') 編輯
+										tbody
+											each i in Array(10)
+												tr
+													td.centered
+														.controlgroup
+															input(type='checkbox')
+													td.centered 01
+													td.centered 播放
+													td
+														+lipsum(1,'sentences')
+													td.centered 1920x1080
+													td.centered
+														a.btn.basic(href='javascript:;') 編輯
+														a.btn.delete(href='javascript:;') 刪除
+													

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>WEYPRO UI</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <!-- build:css styles/vendor.css-->
+    <!-- bower:css-->
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:css styles/weyproui.css-->
+    <link rel="stylesheet" href="styles/weyproui.css">
+    <!-- endbuild-->
+    <!-- build:css styles/customize.css-->
+    <link rel="stylesheet" href="styles/customize.css">
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.pace.js-->
+    <script src="scripts/vendor/pace.js"></script>
+    <!-- endbuild-->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrapper">
+      <header>
+        <div class="header-inner sticker">
+          <div class="head-bar">
+            <div class="container row">
+              <div id="brand">
+                <h6>Brand Text</h6>
+              </div>
+              <div id="miscellaneous"><a id="mobileMenu-trigger" href="javascript:;"><i class="fa fa-bars fa-2x"></i></a></div>
+            </div>
+          </div>
+          <div class="container">
+            <nav class="navigation">
+              <!--Normal Menu Example-->
+              <ul class="menu">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="javascript:;">Demos</a>
+                  <ul>
+                    <li><a href="demo-filemanager.html">File manager</a></li>
+                    <li><a href="demo-login.html">Login</a></li>
+                  </ul>
+                </li>
+                <li><a href="grid.html">The Grid</a></li>
+                <li><a href="javascript:;">Components</a>
+                  <ul>
+                    <li><a href="treelist.html">Tree List</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="javascript:;">Navigator</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Forms</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                  </ul>
+                </li>
+                <li><a href="helpers.html">Helpers</a></li>
+                <li><a href="javascript:;">Javascripts</a>
+                  <ul>
+                    <li><a href="javascript:;">Pace</a></li>
+                    <li><a href="plugin-datatable.html">Datatables</a></li>
+                    <li><a href="javascript:;">ImageExchanger (unavailable)</a></li>
+                    <li><a href="javascript:;">Lazyloads (unavailable)</a></li>
+                    <li><a href="plugin-prism.html">Prism.js</a></li>
+                    <li><a href="plugin-chart.html">Chart.js</a></li>
+                    <li><a href="plugin-tabber.html">Tabber.js		</a></li>
+                  </ul>
+                </li>
+                <li><a href="javascript:;">Contribute</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="with-aside">
+        <aside>
+          <div class="aside-inner">
+            <nav class="navigation">
+              <!--Normal Menu Example-->
+              <ul class="menu">
+                <li><a href="index.html">Overview</a></li>
+                <li><a href="javascript:;">Demos</a>
+                  <ul>
+                    <li><a href="demo-filemanager.html">File manager</a></li>
+                    <li><a href="demo-login.html">Login</a></li>
+                  </ul>
+                </li>
+                <li><a href="grid.html">The Grid</a></li>
+                <li><a href="javascript:;">Components</a>
+                  <ul>
+                    <li><a href="treelist.html">Tree List</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="javascript:;">Navigator</a></li>
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="tables.html">Tables</a></li>
+                    <li><a href="form.html">Forms</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                  </ul>
+                </li>
+                <li><a href="helpers.html">Helpers</a></li>
+                <li><a href="javascript:;">Javascripts</a>
+                  <ul>
+                    <li><a href="javascript:;">Pace</a></li>
+                    <li><a href="plugin-datatable.html">Datatables</a></li>
+                    <li><a href="javascript:;">ImageExchanger (unavailable)</a></li>
+                    <li><a href="javascript:;">Lazyloads (unavailable)</a></li>
+                    <li><a href="plugin-prism.html">Prism.js</a></li>
+                    <li><a href="plugin-chart.html">Chart.js</a></li>
+                    <li><a href="plugin-tabber.html">Tabber.js		</a></li>
+                  </ul>
+                </li>
+                <li><a href="javascript:;">Contribute</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+        <div id="main">
+          <section>
+            <div class="container restrict">
+              <h1>Datatables.js<small>	Datatables / Current Version : 1.10.12 / See <a href="https://datatables.net/" target="_blank">documention.</a>	 here</small></h1>
+              <h3>Default Usage</h3>
+              <table class="rowed table-hover list-table data-tables normal">
+                <thead>
+                  <tr class="centered">
+                    <th width="5%">A</th>
+                    <th width="5%">B	</th>
+                    <th width="6%">C</th>
+                    <th width="40%">D</th>
+                    <th width="15%">E</th>
+                    <th width="17%">F</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Sunt proident fugiat qui. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Ut esse aute lorem dolor adipiscing reprehenderit anim reprehenderit minim, duis. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Nisi magna dolor ad aute consectetur consectetur labore, ipsum excepteur amet. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Ut qui adipiscing, adipiscing ea quis mollit, sint occaecat excepteur esse ut. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Occaecat consectetur duis ut in esse, ullamco, enim, ea culpa quis adipiscing culpa. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Laboris, proident proident ut velit exercitation, cupidatat sit, sunt laboris, exercitation. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Sint quis nulla, occaecat in reprehenderit mollit, nulla. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Non pariatur cillum dolore proident duis aliquip laborum eu labore reprehenderit reprehenderit cupidatat? 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Ea ut culpa magna aute lorem eu, eu eiusmod in ad et? 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Officia deserunt ut, aliqua ea, esse anim. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4>Structure</h4>
+              <p>Add class : 'data-tables','normal'</p>
+              <pre><code class="language-jade">table.rowed.table-hover.list-table.data-tables.normal
+	thead
+		tr.centered
+			th(width='5%') A
+			th(width='5%') B	
+			th(width='6%') C
+			th(width='40%') D
+			th(width='15%') E
+			th(width='17%') F
+	tbody
+		each i in Array(10)
+			tr
+				td.centered AA
+				td.centered BB
+				td.centered CC
+				td
+					+lipsum(1,'sentences')
+				td.centered EE
+				td.centered
+					a.btn.basic(href='javascript:;') 編輯
+					a.btn.delete(href='javascript:;') 刪除</code></pre>
+              <h4>Trigger</h4>
+              <p>(automatic) you don't neeed trigger this with the classes mentioned above.</p>
+              <pre><code class="language-js">$('.data-tables.normal').DataTable({
+	paging: true,
+	"pagingType": "full",
+    rowReorder: {
+		selector: 'td:first-child',
+		dataSrc: 'td:first-child'
+	},
+	ordering: true
+});
+
+
+
+</code></pre>
+              <h3>Draggable</h3>
+              <table class="rowed table-hover list-table data-tables draggable">
+                <thead>
+                  <tr class="centered">
+                    <th width="5%">A</th>
+                    <th width="5%">B	</th>
+                    <th width="6%">C</th>
+                    <th width="40%">D</th>
+                    <th width="15%">E</th>
+                    <th width="17%">F</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Anim lorem irure ullamco est nostrud, amet, sint, nulla minim? 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Exercitation reprehenderit dolore labore, id sed sit ut. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Id velit est reprehenderit, laboris nisi veniam, aliqua sint in dolor sunt. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Do veniam, veniam ut labore in ut commodo sit ex. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Dolor amet, ea eu incididunt culpa est. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Non lorem nulla commodo do ullamco in cillum id laboris ea. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Est consequat ut proident, in. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->In cillum excepteur sed elit et anim, sit, irure eu incididunt in ut adipiscing, id officia. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Dolor in nostrud commodo aute fugiat, aliqua, laborum reprehenderit. 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                  <tr>
+                    <td class="centered">AA</td>
+                    <td class="centered">BB</td>
+                    <td class="centered">CC</td>
+                    <td>
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->
+                      <!-- Add some punctuation-->Officia ut id qui? 
+                    </td>
+                    <td class="centered">EE</td>
+                    <td class="centered"><a href="javascript:;" class="btn basic">編輯</a><a href="javascript:;" class="btn delete">刪除</a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h4>Structure</h4>
+              <p>Add class : 'data-tables','draggable'</p>
+              <pre><code class="language-jade">table.rowed.table-hover.list-table.data-tables.draggable
+	thead
+		tr.centered
+			th(width='5%') A
+			th(width='5%') B	
+			th(width='6%') C
+			th(width='40%') D
+			th(width='15%') E
+			th(width='17%') F
+	tbody
+		each i in Array(10)
+			tr
+				td.centered AA
+				td.centered BB
+				td.centered CC
+				td
+					+lipsum(1,'sentences')
+				td.centered EE
+				td.centered
+					a.btn.basic(href='javascript:;') 編輯
+					a.btn.delete(href='javascript:;') 刪除</code></pre>
+              <h4>Trigger</h4>
+              <p>(automatic) you don't neeed trigger this with the classes mentioned above.</p>
+              <pre><code class="language-js">$('.data-tables.draggable').DataTable({
+	paging: true,
+	"pagingType": "full",
+    rowReorder: {
+		selector: 'td:first-child',
+		dataSrc: 'td:first-child'
+	},
+	ordering: true
+});</code></pre>
+            </div>
+          </section>
+        </div>
+      </main>
+      <div class="footer">
+        <div class="copyrights">WEYPRO TECHNOLOGY</div>
+      </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+      
+    </script>
+    <!-- build:js scripts/vendor.js-->
+    <!-- bower:js-->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.viewport.js-->
+    <script src="scripts/vendor/viewport.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.input.js-->
+    <script src="scripts/plugins/weypro.input.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.modal.js-->
+    <script src="../bower_components/jquery-modal/jquery.modal.js"></script>
+    <script src="scripts/plugins/weypro.modal.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.prism.js-->
+    <script src="scripts/vendor/prism.js"></script>
+    <script src="scripts/plugins/weypro.prism.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.dropZone.js-->
+    <script src="scripts/vendor/dropzone.js"></script>
+    <script src="scripts/plugins/weypro.dropZone.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.sticky.js-->
+    <script src="scripts/vendor/jquery.sticky.js"></script>
+    <script src="scripts/plugins/weypro.sticky.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.dropDown.js-->
+    <script src="scripts/plugins/weypro.dropDown.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.treeList.js-->
+    <script src="scripts/plugins/weypro.treeList.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.tabber.js-->
+    <script src="scripts/vendor/jquery.tabber.js"></script>
+    <script src="scripts/plugins/weypro.tabber.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.trumbowygEditor.js-->
+    <script src="../bower_components/trumbowyg/dist/trumbowyg.js"></script>
+    <script src="../bower_components/trumbowyg/dist/plugins/upload/trumbowyg.upload.js"></script>
+    <script src="scripts/plugins/weypro.trumbowygEditor.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.dataTables.js-->
+    <script src="../bower_components/datatables.net/js/jquery.dataTables.js"></script>
+    <script src="../bower_components/datatables.net-rowreorder/js/dataTables.rowReorder.js"></script>
+    <script src="../bower_components/datatables.net-select/js/dataTables.select.js"></script>
+    <script src="scripts/plugins/weypro.dataTables.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.Chart.js-->
+    <script src="../bower_components/Chart.js/dist/Chart.js"></script>
+    <script src="scripts/plugins/weypro.Chart.js"></script>
+    <!-- endbuild-->
+    <!-- build:js scripts/weypro.demo.js-->
+    <!-- endbuild-->
+  </body>
+</html>

@@ -1,0 +1,124 @@
+/******************************
+**********NAVIGATION**********
+******************************/
+
+/***********MENU*************/
+
+//Basics
+.menu {
+	list-style-type: none;
+	li {
+		a {
+			display: block;
+			//Some Transitions
+			@extend .transition;
+		}
+	}
+}
+
+//menu in Header
+header {
+	.menu {
+		display: none;
+		margin: 0;
+		padding: .5em 0 1em 0;
+		li {
+			display: block;
+			position: relative;
+			a {
+				padding: .5em 1em;
+				color: $white;
+				&:hover {
+					background-color: $background-hover;
+				}
+				//If we got sub menu
+				& + ul {
+					&:before {
+						content: '+';
+						position: absolute;
+						top: .5em;
+						right: 1em;
+						color: $white;
+					}
+				}
+			}
+			//Sub Menu
+			ul {
+				margin: 0;
+				padding: 0;
+				background-color: $white;
+				li {
+					display: block;
+					a {
+						color: $black;
+						&:hover {
+							color: $white;
+						}
+						&:active {
+							background-color: darken($background-hover, 10%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//Menu in Aside
+aside {
+	background-color: $smokygray;
+	box-shadow: inset -6px 0 12px -6px rgba($black, .33);
+	.aside-inner {
+		padding: 3.5em 0 0 0;
+	}
+	.menu {
+		background-color: $smokygray;
+		box-shadow: inset -6px 0 12px -6px rgba($black, .33);
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		li {
+			// border-bottom: 1px solid darken($gray, 5%);
+			margin: .5em 1em;
+			a {
+				padding: .5em 1em;
+				color: $darkgray;
+				&:hover, &.active, &:active {
+					background-color: darken($smokygray, 5%);
+					color: $black;
+				}
+				&.active {
+					position: relative;
+					&:after {
+						content: '';
+						width: 0;
+						height: 0;
+						border-radius: 0;
+						border-style: solid;
+						border-width: 10px 12px 10px 0;
+						border-color: transparent $smokygray transparent transparent;
+						display: block;
+						position: absolute;
+						right: -1em;
+						top: 50%;
+						margin-top: -10px;
+					}
+					& + ul {
+						display: block;
+					}
+				}
+
+			}
+			ul {
+				display: none;
+				list-style-type: none;
+				padding-left: 2em;
+				li {
+					border: 0;
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}

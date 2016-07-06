@@ -1,0 +1,41 @@
+{
+  "name": "weyproui",
+  "private": false,
+  "authors": [
+    "Tony Chiang <tony@weypro.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wushan/weyproui.git"
+  },
+  "main": [
+    "styles/weyproui.css"
+  ],
+  "ignore": [
+    ".*",
+    "app",
+    "node_modules",
+    "bower_components",
+    ".tmp",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.2",
+    "Slidebars": "^0.10.3",
+    "jquery-modal": "^0.7.0",
+    "datatables.net": "^1.10.12",
+    "datatables.net-dt": "^1.10.12",
+    "datatables.net-rowreorder-dt": "^1.1.2",
+    "datatables.net-select-dt": "^1.2.0",
+    "trumbowyg": "^2.1.0",
+    "malihu-custom-scrollbar-plugin": "^3.1.4",
+    "Chart.js": "^2.1.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "breakpoint-sass": "compass-breakpoint#^2.7.0",
+    "susy": "^2.2.12",
+    "bourbon": "^4.2.7"
+  }
+}

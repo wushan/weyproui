@@ -1,0 +1,142 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Datatables.js
+						small
+							|	Datatables / Current Version : 1.10.12 / See 
+							a(href='https://datatables.net/' target='_blank') documention.
+							|	 here
+
+					h3 Default Usage
+					table.rowed.table-hover.list-table.data-tables.normal
+						thead
+							tr.centered
+								th(width='5%') A
+								th(width='5%') B	
+								th(width='6%') C
+								th(width='40%') D
+								th(width='15%') E
+								th(width='17%') F
+						tbody
+							each i in Array(10)
+								tr
+									td.centered AA
+									td.centered BB
+									td.centered CC
+									td
+										+lipsum(1,'sentences')
+									td.centered EE
+									td.centered
+										a.btn.basic(href='javascript:;') 編輯
+										a.btn.delete(href='javascript:;') 刪除
+					h4 Structure
+					p Add class : 'data-tables','normal'
+					pre
+						code.language-jade.
+							table.rowed.table-hover.list-table.data-tables.normal
+								thead
+									tr.centered
+										th(width='5%') A
+										th(width='5%') B	
+										th(width='6%') C
+										th(width='40%') D
+										th(width='15%') E
+										th(width='17%') F
+								tbody
+									each i in Array(10)
+										tr
+											td.centered AA
+											td.centered BB
+											td.centered CC
+											td
+												+lipsum(1,'sentences')
+											td.centered EE
+											td.centered
+												a.btn.basic(href='javascript:;') 編輯
+												a.btn.delete(href='javascript:;') 刪除
+					h4 Trigger
+					p (automatic) you don't neeed trigger this with the classes mentioned above.
+					pre
+						code.language-js.
+							$('.data-tables.normal').DataTable({
+								paging: true,
+								"pagingType": "full",
+							    rowReorder: {
+									selector: 'td:first-child',
+									dataSrc: 'td:first-child'
+								},
+								ordering: true
+							});
+
+
+
+
+					h3 Draggable
+					table.rowed.table-hover.list-table.data-tables.draggable
+						thead
+							tr.centered
+								th(width='5%') A
+								th(width='5%') B	
+								th(width='6%') C
+								th(width='40%') D
+								th(width='15%') E
+								th(width='17%') F
+						tbody
+							each i in Array(10)
+								tr
+									td.centered AA
+									td.centered BB
+									td.centered CC
+									td
+										+lipsum(1,'sentences')
+									td.centered EE
+									td.centered
+										a.btn.basic(href='javascript:;') 編輯
+										a.btn.delete(href='javascript:;') 刪除
+					h4 Structure
+					p Add class : 'data-tables','draggable'
+					pre
+						code.language-jade.
+							table.rowed.table-hover.list-table.data-tables.draggable
+								thead
+									tr.centered
+										th(width='5%') A
+										th(width='5%') B	
+										th(width='6%') C
+										th(width='40%') D
+										th(width='15%') E
+										th(width='17%') F
+								tbody
+									each i in Array(10)
+										tr
+											td.centered AA
+											td.centered BB
+											td.centered CC
+											td
+												+lipsum(1,'sentences')
+											td.centered EE
+											td.centered
+												a.btn.basic(href='javascript:;') 編輯
+												a.btn.delete(href='javascript:;') 刪除
+					h4 Trigger
+					p (automatic) you don't neeed trigger this with the classes mentioned above.
+					pre
+						code.language-js.
+							$('.data-tables.draggable').DataTable({
+								paging: true,
+								"pagingType": "full",
+							    rowReorder: {
+									selector: 'td:first-child',
+									dataSrc: 'td:first-child'
+								},
+								ordering: true
+							});

@@ -1,0 +1,64 @@
+/******************************
+**********TYPOGRAPHY**********
+******************************/
+html {
+	font-size: $font-size;
+}
+
+body {
+	font-family: $sans-serif;
+	line-height: $line-height;
+	font-weight: normal;
+}
+
+/***********Heading***********/
+
+h1,h2,h3,h4,h5,h6 {
+	
+}
+
+h1 {
+	font-size: $font-size-h1;
+}
+h2 {
+	font-size: $font-size-h1*0.9*0.9;
+}
+h3 {
+	font-size: $font-size-h1*0.9*0.9*0.9;
+}
+h4 {
+	font-size: $font-size-h1*0.9*0.9*0.9*0.9;
+}
+h5 {
+	font-size: $font-size-h1*0.9*0.9*0.9*0.9*0.9;
+}
+h6 {
+	font-size: $font-size-h1*0.9*0.9*0.9*0.9*0.9*0.9;
+}
+
+/***************************/
+/*******Combinations*******/
+/***************************/
+h1,h2 {
+	small {
+		font-size: .5em;
+		display: block;
+	}
+}
+
+
+/***********Style***********/
+
+code {
+	// background-color: $lightgray;
+	// padding: .2em .5em;
+	// margin: 0 .5em;
+}
+
+pre {
+	background-color: $smokygray;
+	padding: 1em;
+	border: 1px solid $gray;
+	border-radius: 3px;
+	overflow: scroll;
+}

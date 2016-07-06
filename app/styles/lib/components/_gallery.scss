@@ -1,0 +1,80 @@
+.gallery {
+	margin: 1em 0;
+	padding: 0;
+	list-style-type: none;
+	@extend .clr;
+	a {
+		display: block;
+	}
+	li {
+		margin-top: .3em;
+		margin-bottom: .3em;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.caption {
+			h1,h2,h3,h4,h5,h6 {
+				margin: .2em 0;
+			}
+			.description {
+				color: $darkgray;
+			}
+		}
+	}
+	&.two {
+		li {
+			@include gallery(6 of 12);
+		}
+	}
+	&.three {
+		li {
+			@include gallery(4 of 12);
+		}
+	}
+	&.four {
+		li {
+			@include gallery(3 of 12);
+		}
+	}
+	&.five {
+		li {
+			@include gallery(2 of 10);
+		}
+	}
+	&.six {
+		li {
+			@include gallery(2 of 12);
+		}
+	}
+	&.seven {
+		li {
+			@include gallery(1 of 7);
+		}
+	}
+	&.eight {
+		li {
+			@include gallery(1 of 8);
+		}
+	}
+	&.nine {
+		li {
+			@include gallery(1 of 9);
+		}
+	}
+	&.ten {
+		li {
+			@include gallery(1 of 10);
+		}
+	}
+	&.eleven {
+		li {
+			@include gallery(1 of 11);
+		}
+	}
+	&.twelve {
+		li {
+			@include gallery(1 of 12);
+		}
+	}
+}

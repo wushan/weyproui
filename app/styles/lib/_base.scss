@@ -1,0 +1,22 @@
+body {
+	background-color: $body-background;
+}
+//Fix HTML5 Tag
+main {
+  display: block;
+}
+
+//Link
+a{
+  text-decoration: none;
+  color: $main;
+  &:hover {
+    color: $text-hover;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

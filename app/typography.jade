@@ -1,0 +1,68 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Typography
+					h2 *Headings*
+					h1 h1:
+						+lipsum(1,'sentences')
+					h2 h2:
+						+lipsum(1,'sentences')
+					h3 h3:
+						+lipsum(1,'sentences')
+					h4 h4:
+						+lipsum(1,'sentences')
+					h5 h5:
+						+lipsum(1,'sentences')
+					h6 h6:
+						+lipsum(1,'sentences')
+					h1 Heading with small
+						small small line after it
+					h2 Heading with small
+						small small line after it
+					pre
+						code.language-jade.
+							h1 Heading with small
+								small small line after it
+							h2 Heading with small
+								small small line after it
+
+					h2 *Paragraphs*
+					p
+						+lipsum(10,'sentences')
+					pre
+						code.language-jade.
+							p lorem ipsum
+					h2 *Align Helpers*
+					h5 .centered
+					p.centered
+						+lipsum(10,'sentences')
+					pre
+						code.language-jade.
+							p.centered lorem ipsum
+					h5 .left
+					p.left
+						+lipsum(10,'sentences')
+					pre
+						code.language-jade.
+							p.left lorem ipsum
+					h5 .right
+					p.right
+						+lipsum(10,'sentences')
+					pre
+						code.language-jade.
+							p.right lorem ipsum
+					h5 .justify
+					p.justify
+						+lipsum(12,'sentences')
+					pre
+						code.language-jade.
+							p.justify lorem ipsum

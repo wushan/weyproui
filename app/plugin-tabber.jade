@@ -1,0 +1,46 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 jQuery Tabber.js
+						small
+							|	Simple jquery tab plugin / See 
+							a(href='https://github.com/wushan/jQuery-Tabber' target='_blank') documention
+							|	 here
+					#tabber
+						.tabber-selectors
+							ul
+								li
+									a.tabber-anchor.active(href='javascript:;') Tab 1
+								li
+									a.tabber-anchor(href='javascript:;') Tab 2
+								li
+									a.tabber-anchor(href='javascript:;') Tab 3
+						.tabber-contents
+							.tabber-content.active Contents accroding to Tab 1
+							.tabber-content Contents accroding to Tab 2
+							.tabber-content Contents accroding to Tab 3
+					h3 Structure
+					pre
+						code.language-jade.
+							#tabber
+								.tabber-selectors
+									a.tabber-anchor(href='javascript:;') Tab 1
+									a.tabber-anchor(href='javascript:;') Tab 2
+									a.tabber-anchor(href='javascript:;') Tab 3
+								.tabber-contents
+									.tabber-content Contents accroding to Tab 1
+									.tabber-content Contents accroding to Tab 2
+									.tabber-content Contents accroding to Tab 3
+					h3 Trigger
+					pre
+						code.language-js.
+							$('#tabber').tabber();

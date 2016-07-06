@@ -1,0 +1,105 @@
+//BUTTONS
+.call-action {
+  padding: .5em 0;
+  border-top: 1px solid $lightgray;
+}
+.btn {
+  @extend .transition;
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5em 1em;
+  box-sizing: border-box;
+  outline: none;
+  background-color: $lightgray;
+  color: $black;
+  border-radius: 3px;
+  border: 0;
+  margin: 0 .1em;
+  border: 1px solid $gray;
+  font-weight: 100;
+  &:hover {
+    background-color: $darkgray;
+    color: $white;
+  }
+  &.disabled {
+    background-color: $gray !important;
+    box-shadow: inset 1px 1px 1px rgba(darken($gray,10%), 1) !important;
+    text-shadow: -1px -1px 1px darken($gray,10%) !important;
+    color: lighten($gray,15%) !important;
+  }
+  &.circle {
+
+  }
+  &.basic {
+    background-color: $blue;
+    color: $white;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+
+    &:hover {
+      background-color: darken($blue, 10%);
+      box-shadow: inset 0 0 6px darken($blue, 10%);
+    }
+    &:active {
+      background-color: darken($blue, 20%);
+    }
+  }
+  
+  &.cancel {
+    background-color: #dcdcdc;
+    color: #666;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &:hover {
+      background-color: darken(#dcdcdc, 10%);
+      box-shadow: inset 0 0 6px darken(#dcdcdc, 10%);
+    }
+    &:active {
+      background-color: darken(#dcdcdc, 20%);
+    }
+  }
+  &.delete {
+    background-color: $red;
+    color: $white;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &:hover {
+      background-color: darken($red, 10%);
+      box-shadow: inset 0 0 6px darken($red, 10%);
+    }
+    &:active {
+      background-color: darken($red, 20%);
+    }
+  }
+  &.edit {
+    background-color: $green;
+    color: $white;
+    border: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &:hover {
+      background-color: darken($green, 10%);
+      box-shadow: inset 0 0 6px darken($green, 10%);
+    }
+    &:active {
+      background-color: darken($green, 20%);
+    }
+  }
+  //Full
+  &.full {
+    display: block;
+    margin: .5em 0;
+    text-align: center;
+    width: 100%;
+  }
+  //Size
+  &.btn-small {
+    padding: .2em .5em;
+  }
+}
+
+.button-group {
+  margin: .5em 0;
+  .btn {
+    
+  }
+}

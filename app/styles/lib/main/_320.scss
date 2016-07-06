@@ -1,0 +1,24 @@
+main {
+	&.with-aside {
+		aside {
+			width: 220px;
+			height: 100%;
+			position: fixed;
+			left: -220px;
+			top: 0;
+			@extend .transition;
+			overflow: scroll;
+		}
+		#main {
+			@extend .transition;
+		}
+		&.sidebar-active {
+			aside {
+				left: 0;
+			}
+			#main {
+				margin-left: 220px;
+			}
+		}
+	}
+}

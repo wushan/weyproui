@@ -1,0 +1,23 @@
+.tag-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: .8em;
+		margin-right: .5em;
+		padding: .5em 1em;
+		background-color: $white;
+		box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+		&:hover {
+			background-color: $smokygray;
+		}
+		a {
+			color: $darkgray;
+			i {
+				margin-left: .4em;
+			}
+		}
+	}
+}

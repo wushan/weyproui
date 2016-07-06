@@ -1,0 +1,173 @@
+@include susy-breakpoint(768px, 12) {
+	//menu in Header
+	header {
+		.menu {
+			//At least 50px padding
+			display: block;
+			box-sizing: border-box;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				position: relative;
+				a {
+					//If we got sub menu
+					&.active + ul {
+						&:before {
+							content: '';
+							position: absolute;
+							width: 0;
+							height: 0;
+							background: none;
+							border-radius: 0;
+							border-style: solid;
+							border-width: 0 10px 12px 10px;
+							border-color: transparent transparent $white transparent;
+							display: block;
+							top: -12px;
+							left: 50%;
+							margin-left: -10px;
+						}
+						li {
+							display: block;
+							opacity: 1;
+							width: inherit;
+							height: inherit;
+							transition: .3s opacity ease-in;
+							&:nth-child(2) {
+								transition-delay: 200ms;
+							}
+							&:nth-child(3) {
+								transition-delay: 300ms;
+							}
+							&:nth-child(4) {
+								transition-delay: 400ms;
+							}
+							&:nth-child(5) {
+								transition-delay: 500ms;
+							}
+							&:nth-child(6) {
+								transition-delay: 600ms;
+							}
+							&:nth-child(7) {
+								transition-delay: 700ms;
+							}
+							&:nth-child(8) {
+								transition-delay: 800ms;
+							}
+							&:nth-child(9) {
+								transition-delay: 900ms;
+							}
+							&:nth-child(10) {
+								transition-delay: 1000ms;
+							}
+						}
+					}
+					& + ul {
+
+						&:before {
+							content: '';
+							position: absolute;
+							width: 6px;
+							height: 6px;
+							display: block;
+							border-radius: 50%;
+							background-color: $white;
+							top: -12px;
+							left: 50%;
+							margin-left: -3px;
+						}
+						li {
+							width: 0;
+							height: 0;
+							opacity: 0;
+							transition: none;
+						}
+					}
+				}
+				//Sub Menu
+				ul {
+					padding: 0;
+					position: absolute;
+					width: $submenu-width;
+					left: 50%;
+					top: calc( 100% + 10px );
+					margin-left: $submenu-width/2*-1;
+					box-shadow: 0 0 3px rgba($black,.33);
+					z-index: 2;
+					li {
+						display: block;
+					}
+				}
+			}
+			//With Icon
+			&.with-icon {
+				li {
+					//first level
+					a {
+						text-align: center;
+						span {
+							display: block;
+						}
+					}
+					ul {
+						li {
+							a {
+								text-align: left;
+								i {
+									margin-right: .5em;
+								}
+								span {
+									display: inline-block;
+									vertical-align: middle;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Menu in Aside
+	aside {
+		.aside-inner {
+			padding: 11em 0 0 0;
+			.menu {
+				//With Icon
+				&.with-icon {
+					li {
+						//first level
+						a {
+							text-align: left;
+							i {
+								font-size: 1.6em;
+								width: 34px;
+								margin-right: 5px;
+								vertical-align: middle;
+							}
+							span {
+								display: inline-block;
+								vertical-align: middle;
+								
+							}
+						}
+						ul {
+							li {
+								a {
+									text-align: left;
+									
+									i {
+										
+									}
+									span {
+										display: inline-block;
+										vertical-align: middle;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

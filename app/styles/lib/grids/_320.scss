@@ -1,0 +1,7 @@
+.row {
+	@extend .clr;
+	margin-bottom: .5em;
+	.row {
+		margin-bottom: 0;
+	}
+}

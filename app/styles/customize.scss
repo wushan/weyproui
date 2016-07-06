@@ -1,0 +1,36 @@
+//Variables
+@import "lib/variables/var";
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 300;
+}
+//Library
+#library-edit-wrapper {
+	.thumbnail {
+		margin-bottom: 1em;
+	}
+}
+
+//Login Form
+.login-form {
+	background-color: $white;
+	color: $black;
+	padding: 1em 2em;
+	border-radius: 6px;
+	box-shadow: 0 0 6px rgba($black, .66);
+	box-sizing: border-box;
+	.title {
+		padding: 0 0 1em 0;
+		margin-bottom: 1em;
+		border-bottom: 1px solid $lightgray;
+		h1 {
+			margin: 0;
+			// line-height: 1;
+		}
+	}
+}
+
+#logo {
+	margin: 2em 0;
+	padding: 0 2em;
+}

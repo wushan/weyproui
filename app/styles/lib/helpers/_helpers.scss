@@ -1,0 +1,72 @@
+/*****************Animations*****************/
+.transition {
+  transition: .3s all ease-in-out;
+}
+/******************Clearfix******************/
+.clr {
+  &:before, &:after {
+    content:'';
+    clear: both;
+    display: block;
+  }
+}
+
+/*****************Containers*****************/
+.container {
+	padding: 0 1em;
+	margin: 0 auto;
+	background-position: center;
+	background-size: cover;
+	&.restrict {
+		max-width: $restrict;
+	}
+	&.restrict-small {
+		max-width: $restrict-small;
+	}
+	&.restrict-tiny {
+		max-width: $restrict-tiny;
+	}
+	&.full-page {
+		height: calc( 100vh - 47px );
+	}
+	&.vertical-middle {
+		font-size: 0;
+		text-align: center;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 0;
+			height: 100%;
+		}
+		.container-inner {
+			font-size: 1rem;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+/*************Text Align Helpers*************/
+.centered {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.justify {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	-ms-text-justify: inter-ideograph; /*IE9*/
+	-moz-text-align-last:justify; /*Firefox*/
+	-webkit-text-align-last:justify; /*Chrome*/
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,29 @@
+#breadcrumb {
+	ul {
+		background-color: $lightgray;
+		margin: 0 0 1em 0;
+		padding: .5em 1em;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			vertical-align: middle;
+			&:after {
+				content: '/';
+			}
+			&:last-child {
+				&:after {
+					content: '';
+				}
+				a {
+					color: $main;
+				}
+			}
+			a {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 .5em;
+				color: $black;
+			}
+		}
+	}
+}

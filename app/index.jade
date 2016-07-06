@@ -1,0 +1,142 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Page Structrue
+					p.
+						Page Structure
+					pre
+						code.language-jade.
+							html
+								head
+								body
+									#wrapper
+										header
+											//Insert Header
+											nav.navigation
+												//You can use Navigation here.(Optional)
+										main
+											//Main Content
+											nav.navigation
+												//You can use Navigation here.(Optional)
+											aside
+												//You can use Aside here. (Optional)
+										footer
+											//Footer
+			section
+				.container.restrict
+					h1 Header
+					h5 Basics
+					pre
+						code.language-jade.
+							header
+								.header-inner
+								.head-bar
+									.container.restrict
+									#brand
+										h6 Brand Text
+								.container.restrict
+									nav.navigation
+										.
+										.
+										.
+					h5 Fixed Header (.sticker)
+					pre
+						code.language-jade.
+							header
+								.header-inner.sticker
+									.head-bar
+										.container.restrict
+											#brand
+												h6 Brand Text
+									.container.restrict
+			section
+				.container.restrict
+					h1 Navigator
+					h5 Menu in navigation
+					pre
+						code.language-jade.
+							nav.navigation
+								ul.menu
+									li
+										a(href='javascript:;') A
+									li
+										a(href='javascript:;') A
+									li
+										a(href='javascript:;') A
+					h5 Menu with icons
+					pre
+						code.language-jade.
+							.with-icon
+					h6 Examples
+					pre
+						code.language-jade.
+							ul.menu
+								li
+									a(href='javascript:;')
+										i.fa.fa-calendar-plus-o.fa-3x
+										span Overview
+									ul
+										li
+											a(href='javascript:;')
+												i.fa.fa-code-fork.fa-lg
+												span Edge test
+								.
+								.
+								.
+					h5 Menu in Aside
+					p Same structure as above but wrapped in aside tag.
+					pre
+						code.language-jade.
+							aside
+								ul.menu
+									li
+										a(href='javascript:;')
+											i.fa.fa-calendar-plus-o.fa-3x
+											span Overview
+										ul
+											li
+												a(href='javascript:;')
+													i.fa.fa-code-fork.fa-lg
+													span Edge test
+			
+			
+			section
+				.container.restrict
+					h1 Lists
+					.row
+						.grid.g-4-12
+							h5 UL/LI
+							ul
+								li list item
+								li list item
+								li list item
+								li list item
+								li list item
+
+						.grid.g-4-12
+							h5 OL/LI
+							ol
+								li list item
+								li list item
+								li list item
+								li list item
+								li list item
+						.grid.g-4-12
+							h5 DL/DD
+							dl
+								dd list item
+								dd list item
+								dd list item
+								dd list item
+								dd list item
+			
+			

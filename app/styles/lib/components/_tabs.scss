@@ -1,0 +1,38 @@
+//Basic Styling
+#tabber {
+	.tabber-selectors {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			font-size: 0;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		a {
+			font-size: 1rem;
+			display: block;
+			color: $white;
+			padding: .8em 1.6em;
+		}
+		.tabber-anchor {
+			background-color: $blue;
+			&:hover, &.active {
+				background-color: darken($blue, 15%);
+			}
+		}
+	}
+}
+.tabber-contents {
+	padding: 1em;
+	box-sizing: border-box;
+	background-color: $white;
+	.tabber-content {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}

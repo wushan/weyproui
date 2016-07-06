@@ -1,0 +1,11 @@
+.dropzone {
+	cursor: pointer;
+	border: 4px dashed $gray;
+	margin: 1em;
+	padding: 3em;
+	text-align: center;
+	@extend .transition;
+	&:focus, &:hover {
+		border-color: $darkgray;
+	}
+}

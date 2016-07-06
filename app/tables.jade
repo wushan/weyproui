@@ -1,0 +1,133 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Tables
+					h5 Basic Table
+					table
+						thead
+							tr
+								th th
+								th th
+								th th
+								th th
+						tbody
+							each i in new Array(10)
+								tr
+									th th
+									td td
+									td td
+									td td
+					pre
+						code.language-jade.
+							table
+								thead
+									tr
+										th th
+										th th
+										th th
+										th th
+								tbody							
+									tr
+										th th
+										td td
+										td td
+										td td
+					h4 Rowed Table
+					table.rowed
+						thead
+							tr
+								th th
+								th th
+								th th
+								th th
+						tbody
+							each i in new Array(10)
+								tr
+									th th
+									td td
+									td td
+									td td
+					pre
+						code.language-jade.
+							table.rowed
+								thead
+									tr
+										th th
+										th th
+										th th
+										th th
+								tbody
+									each i in new Array(10)
+										tr
+											th th
+											td td
+											td td
+											td td
+					h4 Interlace Table
+					table.interlaced
+						thead
+							tr
+								th th
+								th th
+								th th
+								th th
+						tbody
+							each i in new Array(10)
+								tr
+									td td
+									td td
+									td td
+									td td
+					pre
+						code.language-jade.
+							table.interlaced
+								thead
+									tr
+										th th
+										th th
+										th th
+										th th
+								tbody
+									each i in new Array(10)
+										tr
+											td td
+											td td
+											td td
+											td td
+					h4 TR hover
+					table.interlaced.table-hover
+						thead
+							tr
+								th th
+								th th
+								th th
+								th th
+						tbody
+							each i in new Array(10)
+								tr
+									td td
+									td td
+									td td
+									td td
+					
+					pre
+						code.language-jade.
+							table.interlaced.table-hover
+								thead
+									tr
+										th th
+										th th
+										th th
+										th th
+								.
+								.
+								
