@@ -48,7 +48,7 @@
   }
 }
 textarea {
-  width: 100%;
+  // width: 100%;
   border: 1px solid $gray;
   box-sizing: border-box;
   height: 44px;
@@ -65,7 +65,7 @@ textarea {
 }
 
 input[type=color], input[type=time],input[type=datetime],input[type=time],input[type=date],input[type=tel],input[type=url],input[type=week],input[type=text],input[type=email],input[type=password],input[type=search], input[type=number] {
-  width: 100%;
+  // width: 100%;
   display: inline-block;
   vertical-align: middle;
   border: 1px solid $gray;
@@ -203,7 +203,8 @@ input[disabled] {
     background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
     box-sizing: border-box;
-    border: 0;
+    border: 1px solid $gray;
+    border-radius: 3px;
     height: $input-height;
     padding: .3em 3em .3em .3em;
     background-color: $white;
@@ -213,12 +214,10 @@ input[disabled] {
   }
   .select-wrapper {
     box-sizing: border-box;
-    width: 100%;
+    // width: 100%;
     outline: none;
     background-color: $white;
     overflow: hidden;
-    border: 1px solid $gray;
-    border-radius: 3px;
     display: inline-block;
     vertical-align: middle;
     &:focus {
@@ -234,3 +233,10 @@ input[disabled] {
 ::-moz-placeholder { /* Mozilla Firefox 19+ */ color: $gray; opacity: 1; }
 
 :-ms-input-placeholder { /* Internet Explorer 10+ */ color: $gray; }
+
+
+input, textarea, .select-wrapper {
+  &.full {
+    width: 100%;
+  }
+}
