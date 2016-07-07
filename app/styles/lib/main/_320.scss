@@ -11,6 +11,8 @@ main {
 		}
 		#main {
 			@extend .transition;
+			padding: 1em 0;
+			box-sizing: border-box;
 		}
 		&.sidebar-active {
 			aside {
