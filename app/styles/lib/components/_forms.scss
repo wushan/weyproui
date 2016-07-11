@@ -65,7 +65,7 @@ textarea {
 }
 
 input[type=color], input[type=time],input[type=datetime],input[type=time],input[type=date],input[type=tel],input[type=url],input[type=week],input[type=text],input[type=email],input[type=password],input[type=search], input[type=number] {
-  // width: 100%;
+  width: 100%;
   display: inline-block;
   vertical-align: middle;
   border: 1px solid $gray;
