@@ -1,0 +1,23 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			include layouts/breadcrumb
+			section
+				.container.restrict
+					.widget-block
+						.widget-title.centered
+							h5 Widget Title
+							.widget-content
+								.button-group.left
+									a.btn.edit(href='javascript:;') buttons
+									a.btn.edit(href='javascript:;') buttons
+									a.btn.edit(href='javascript:;') buttons
+									a.btn.basic(href='javascript:;') buttons
+								+lipsum(20, 'paragraphs')

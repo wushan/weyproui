@@ -15,6 +15,9 @@
 		color: $black;
 		font-size: 1.1em;
 		font-weight: 600;
+		h1,h2,h3,h4,h5 {
+			margin: 0;
+		}
 	}
 	.widget-content {
 		box-sizing: border-box;
