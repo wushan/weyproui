@@ -1,0 +1,43 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 jQuery Modal
+						small
+							|	the simplest modal you ever did see / See 
+							a(href='http://jquerymodal.com/' target='_blank') documention.
+							|	 here
+					h3 Example
+					h4 Inline
+					a.btn.basic(href='#abc', rel='modal:open') OPEN ABC
+					#abc(style='display: none;').
+						Contents in div#abc
+					pre
+						code.language-jade.
+							a(href='#abc', rel='modal:open') OPEN ABC
+
+							#abc(style='display: none;').
+								Contents in div#abc
+					h4 AJAX
+					a.btn.basic(href='modal-ajax-demo.html', rel='modal:open') OPEN PAGE
+					pre
+						code.language-jade.
+							a.btn.basic(href='modal-ajax-demo.html', rel='modal:open') OPEN PAGE
+					h5 modal-ajax-demo.html
+					pre
+						code.language-jade.
+							.widget-block
+								.widget-title.centered
+									h5 Widget Title
+									.widget-content
+										p
+											|	This modal is using WidgetBlock Component style, see 
+											a(href='widget.html') Widget Block
