@@ -8,25 +8,26 @@
 ************COLORS************
 ******************************/
 
-$white: #ffffff;
-$black: #000000;
-$gray: #cccccc;
-$lightgray: #dddddd;
-$smokygray: #f7f7f7;
-$darkgray: #666666;
-$darkestgray: #3e3e3e;
+$white: 					#ffffff;
+$black: 					#1A1A1A;
+$gray: 						#cccccc;
+$lightgray: 				#dddddd;
+$smokygray: 				#f7f7f7;
+$darkgray: 					#666666;
+$darkestgray: 				#3e3e3e;
 
 /* Common Colors */
-$yellow: #ffd150;
-$red: #BF0000;
-$blue: #4285f4;
-$green: #248566;
+$yellow: 					#ffd150;
+$red: 						#bf2020;
+$blue: 						#3668b3;
+$green: 					#44846f;
 
 //Set Single Main Color
-$main: #1565c0; //#16B590
-$text-hover: shade( $main, 20% );
-$background-hover: shade( $main, 20% );
-$body-background: $smokygray;
+// $main: #1565c0; //#16B590
+$main: 						#3c434c;
+$text-hover: 				shade( $main, 20% );
+$background-hover: 			shade( $main, 20% );
+$body-background: 			$smokygray;
 
 //Selections
 $selection: #ECF5FF;
@@ -36,8 +37,9 @@ $selection: #ECF5FF;
 // USE Google Fonts Early Access
 // For 'Noto Sans TC'
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
 
-$sans-serif: "proxima-nova","source-han-sans-traditional",'Noto Sans TC',"Helvetica Neue",Arial,"Heiti TC","LiHei Pro","微軟正黑體","Microsoft Jhenghei", sans-serif;
+$sans-serif: "Roboto","source-han-sans-traditional",'Noto Sans TC',"Helvetica Neue",Arial,"Heiti TC","LiHei Pro","微軟正黑體","Microsoft Jhenghei", sans-serif;
 $serif: serif;
 $font-size: 87.5%;
 $font-size-h1: 2.4em;

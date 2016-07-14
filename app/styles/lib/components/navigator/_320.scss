@@ -66,26 +66,28 @@ header {
 
 //Menu in Aside
 aside {
-	background-color: $smokygray;
+	background-color: lighten($main, 70%);
 	box-shadow: inset -6px 0 12px -6px rgba($black, .33);
 	.aside-inner {
 		padding: 3.5em 0 0 0;
 	}
 	.menu {
-		background-color: $smokygray;
-		box-shadow: inset -6px 0 12px -6px rgba($black, .33);
+		// background-color: $smokygray;
+		box-shadow: inset -6px 0 12px -10px rgba($black, .33);
 		margin: 0;
 		padding: 0;
 		list-style-type: none;
 		li {
 			// border-bottom: 1px solid darken($gray, 5%);
-			margin: .5em 1em;
+			// margin: .5em 1em;
 			a {
 				padding: .5em 1em;
 				color: $darkgray;
 				&:hover, &.active, &:active {
-					background-color: darken($smokygray, 5%);
+					// background-color: darken($smokygray, 5%);
+					border-left: 8px solid $main;
 					color: $black;
+					font-weight: 700;
 				}
 				&.active {
 					position: relative;
@@ -99,7 +101,7 @@ aside {
 						border-color: transparent $smokygray transparent transparent;
 						display: block;
 						position: absolute;
-						right: -1em;
+						right: 0;
 						top: 50%;
 						margin-top: -10px;
 					}

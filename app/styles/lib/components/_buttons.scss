@@ -4,7 +4,7 @@
   border-top: 1px solid $lightgray;
 }
 .btn {
-  @extend .transition;
+  transition: .2s all ease-out;
   display: inline-block;
   vertical-align: middle;
   padding: .5em 1em;
@@ -16,7 +16,8 @@
   border: 0;
   margin: 0 .1em;
   border: 1px solid $gray;
-  font-weight: 100;
+  letter-spacing: .05em;
+  font-weight: 300;
   &:hover {
     background-color: $darkgray;
     color: $white;
@@ -34,8 +35,15 @@
     background-color: $blue;
     color: $white;
     border: 0;
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
-
+    
+    &.bordered {
+      border: 1px solid $blue;
+      background-color: transparent;
+      color: $blue;
+      &:hover {
+        color: $white;
+      }
+    }
     &:hover {
       background-color: darken($blue, 10%);
       box-shadow: inset 0 0 6px darken($blue, 10%);
@@ -46,10 +54,17 @@
   }
   
   &.cancel {
-    background-color: #dcdcdc;
+    background-color: $gray;
     color: #666;
     border: 0;
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &.bordered {
+      border: 1px solid $gray;
+      background-color: transparent;
+      color: $gray;
+      &:hover {
+        color: $white;
+      }
+    }
     &:hover {
       background-color: darken(#dcdcdc, 10%);
       box-shadow: inset 0 0 6px darken(#dcdcdc, 10%);
@@ -62,7 +77,14 @@
     background-color: $red;
     color: $white;
     border: 0;
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &.bordered {
+      border: 1px solid $red;
+      background-color: transparent;
+      color: $red;
+      &:hover {
+        color: $white;
+      }
+    }
     &:hover {
       background-color: darken($red, 10%);
       box-shadow: inset 0 0 6px darken($red, 10%);
@@ -75,7 +97,14 @@
     background-color: $green;
     color: $white;
     border: 0;
-    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+    &.bordered {
+      border: 1px solid $green;
+      background-color: transparent;
+      color: $green;
+      &:hover {
+        color: $white;
+      }
+    }
     &:hover {
       background-color: darken($green, 10%);
       box-shadow: inset 0 0 6px darken($green, 10%);

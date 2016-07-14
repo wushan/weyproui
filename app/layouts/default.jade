@@ -36,10 +36,16 @@ html.no-js
 						.head-bar
 							.container.row
 								#brand
-									h6 Brand Text
+									h6
+										a(href='/') Brand Text
 								#miscellaneous
+									
 									a#mobileMenu-trigger(href='javascript:;')
 										i.fa.fa-bars.fa-2x
+									a(href='javascript:;', title="設定")
+										i.fa.fa-cog.fa-2x
+									a(href='javascript:;', title="登出")
+										i.fa.fa-sign-out.fa-2x
 						.container
 							include navigation
 			block content

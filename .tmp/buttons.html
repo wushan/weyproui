@@ -31,9 +31,9 @@
           <div class="head-bar">
             <div class="container row">
               <div id="brand">
-                <h6>Brand Text</h6>
+                <h6><a href="/">Brand Text</a></h6>
               </div>
-              <div id="miscellaneous"><a id="mobileMenu-trigger" href="javascript:;"><i class="fa fa-bars fa-2x"></i></a></div>
+              <div id="miscellaneous"><a id="mobileMenu-trigger" href="javascript:;"><i class="fa fa-bars fa-2x"></i></a><a href="javascript:;" title="設定"><i class="fa fa-cog fa-2x"></i></a><a href="javascript:;" title="登出"><i class="fa fa-sign-out fa-2x"></i></a></div>
             </div>
           </div>
           <div class="container">
@@ -133,7 +133,27 @@
           </div>
           <section>
             <div class="container">
-              <div class="row"><a href="javascript:;" class="btn basic">default</a><a href="javascript:;" class="btn edit">edit</a><a href="javascript:;" class="btn delete">delete</a><a href="javascript:;" class="btn cancel">cancel</a><a href="javascript:;" class="btn basic full">full width</a><a href="javascript:;" class="btn basic disabled">disabled</a></div>
+              <div class="row"><a href="javascript:;" class="btn basic">default</a><a href="javascript:;" class="btn edit">edit</a><a href="javascript:;" class="btn delete">delete</a><a href="javascript:;" class="btn cancel">cancel</a><a href="javascript:;" class="btn basic full">full width</a><a href="javascript:;" class="btn disabled">disabled</a></div>
+              <h4>Usage</h4>
+              <pre><code class="language-jade">a.bordered.btn.basic(href="javascript:;") default</code></pre>
+              <h5>Purpose</h5>
+              <p>Basic</p>
+              <pre><code class="language-jade">a.bordered.btn.basic(href="javascript:;") default</code></pre>
+              <p>Edit</p>
+              <pre><code class="language-jade">a.bordered.btn.edit(href="javascript:;") default</code></pre>
+              <p>Delete</p>
+              <pre><code class="language-jade">a.bordered.btn.delete(href="javascript:;") default</code></pre>
+              <p>Cancel</p>
+              <pre><code class="language-jade">a.bordered.btn.cancel(href="javascript:;") default</code></pre>
+              <p>Full</p>
+              <pre><code class="language-jade">a.bordered.btn.full(href="javascript:;") default</code></pre>
+              <p>Disabled</p>
+              <pre><code class="language-jade">a.bordered.btn.disabled(href="javascript:;") default</code></pre>
+              <h4>Style</h4>
+              <h5>Bordered</h5>
+              <div class="row"><a href="javascript:;" class="bordered btn basic">default</a><a href="javascript:;" class="bordered btn edit">edit</a><a href="javascript:;" class="bordered btn delete">delete</a><a href="javascript:;" class="bordered btn cancel">cancel</a><a href="javascript:;" class="bordered btn basic full">full width</a></div>
+              <p>Bordered</p>
+              <pre><code class="language-jade">a.bordered.btn.bordered.edit(href="javascript:;") default</code></pre>
             </div>
           </section>
         </div>

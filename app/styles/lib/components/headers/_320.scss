@@ -18,6 +18,9 @@ header {
 		padding: .5em;
 		background-color: shade($main, 30%);
 		@extend .clr;
+		.row {
+			margin: 0;
+		}
 	}
 	#brand {
 		@include span(6 of 12);
@@ -31,11 +34,21 @@ header {
 		img {
 			margin: 0;
 		}
+		a {
+			color: $white;
+			line-height: 49px;
+		}
 	}
 	#miscellaneous {
 		text-align: right;
 		color: $white;
 		@include span(6 of 12 last);
+		a {
+			color: $white;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 10px;
+		}
 	}
 	//mobileMenu-trigger
 	#mobileMenu-trigger {
