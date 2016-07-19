@@ -1,0 +1,30 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Pickadate.js
+						small
+							|	Pickadate / Current Version : 3.5.6 / See 
+							a(href='https://github.com/amsul/pickadate.js' target='_blank') documention.
+							|	 here
+
+					h3 Default Usage
+					p.
+						We've got 2 select type by time / date.
+					input.pick-date(type='text', placeholder='pick a date')
+					input.pick-time(type='text', placeholder='pick a time')
+					h4 Structure
+					p Add class : 'pick-date','pick-time'
+					pre
+						code.language-jade.
+							input.pick-date(type='text', placeholder='pick a date')
+							input.pick-time(type='text', placeholder='pick a time')
+					

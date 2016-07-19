@@ -9,7 +9,6 @@
 
 //Susy Global Setting
   @import "lib/susy";
-
 //Variables
 @import "lib/variables/var";
 
@@ -30,4 +29,7 @@
 @import 'vendor/prism';
 @import 'vendor/jquery.modal';
 @import 'vendor/jquery.mCustomScrollbar';
+@import 'vendor/datepicker/classic';
+@import 'vendor/datepicker/classic.date';
+@import 'vendor/datepicker/classic.time';
 @import 'vendor/fontawesome/font-awesome';

@@ -128,97 +128,18 @@
         <div id="main">
           <section>
             <div class="container restrict">
-              <h1>Chart.js<small>	Amazing HTML5 Canvas Chart / Current Version : 2.1.6 / See <a href="http://www.chartjs.org/docs/" target="_blank">documention.</a>	 here</small></h1>
-              <div class="container restrict-tiny">
-                <canvas id="myChart" width="400" height="400"></canvas>
-              </div>
-              <h3>Canvas</h3>
-              <pre><code class="language-jade">.container.restrict-tiny
-	canvas#myChart(width="400" height="400")</code></pre>
-              <h3>Trigger</h3>
-              <pre><code class="language-js">var ctx = $("#myChart");
-if (ctx) {
-	var myChart = new Chart(ctx, {
-	    type: 'bar',
-	    data: {
-	        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-	        datasets: [{
-	            label: '# of Votes',
-	            data: [12, 19, 3, 5, 2, 3],
-	            backgroundColor: [
-	                'rgba(255, 99, 132, 0.2)',
-	                'rgba(54, 162, 235, 0.2)',
-	                'rgba(255, 206, 86, 0.2)',
-	                'rgba(75, 192, 192, 0.2)',
-	                'rgba(153, 102, 255, 0.2)',
-	                'rgba(255, 159, 64, 0.2)'
-	            ],
-	            borderColor: [
-	                'rgba(255,99,132,1)',
-	                'rgba(54, 162, 235, 1)',
-	                'rgba(255, 206, 86, 1)',
-	                'rgba(75, 192, 192, 1)',
-	                'rgba(153, 102, 255, 1)',
-	                'rgba(255, 159, 64, 1)'
-	            ],
-	            borderWidth: 1
-	        }]
-	    },
-	    options: {
-	        scales: {
-	            yAxes: [{
-	                ticks: {
-	                    beginAtZero:true
-	                }
-	            }]
-	        }
-	    }
-	});
-}</code></pre>
+              <h1>Pickadate.js<small>	Pickadate / Current Version : 3.5.6 / See <a href="https://github.com/amsul/pickadate.js" target="_blank">documention.</a>	 here</small></h1>
+              <h3>Default Usage</h3>
+              <p>We've got 2 select type by time / date.</p>
+              <input type="text" placeholder="pick a date" class="pick-date">
+              <input type="text" placeholder="pick a time" class="pick-time">
+              <h4>Structure</h4>
+              <p>Add class : 'pick-date','pick-time'</p>
+              <pre><code class="language-jade">input.pick-date(type='text', placeholder='pick a date')
+input.pick-time(type='text', placeholder='pick a time')</code></pre>
             </div>
           </section>
         </div>
-        <script>
-          var ctx = $("#myChart");
-          if (ctx) {
-          	var myChart = new Chart(ctx, {
-          	    type: 'bar',
-          	    data: {
-          	        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-          	        datasets: [{
-          	            label: '# of Votes',
-          	            data: [12, 19, 3, 5, 2, 3],
-          	            backgroundColor: [
-          	                'rgba(255, 99, 132, 0.2)',
-          	                'rgba(54, 162, 235, 0.2)',
-          	                'rgba(255, 206, 86, 0.2)',
-          	                'rgba(75, 192, 192, 0.2)',
-          	                'rgba(153, 102, 255, 0.2)',
-          	                'rgba(255, 159, 64, 0.2)'
-          	            ],
-          	            borderColor: [
-          	                'rgba(255,99,132,1)',
-          	                'rgba(54, 162, 235, 1)',
-          	                'rgba(255, 206, 86, 1)',
-          	                'rgba(75, 192, 192, 1)',
-          	                'rgba(153, 102, 255, 1)',
-          	                'rgba(255, 159, 64, 1)'
-          	            ],
-          	            borderWidth: 1
-          	        }]
-          	    },
-          	    options: {
-          	        scales: {
-          	            yAxes: [{
-          	                ticks: {
-          	                    beginAtZero:true
-          	                }
-          	            }]
-          	        }
-          	    }
-          	});
-          }
-        </script>
       </main>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
@@ -288,46 +209,5 @@ if (ctx) {
     <script src="scripts/plugins/weypro.dataTables.js"></script>
     <script src="scripts/plugins/weypro.Chart.js"></script>
     <!-- endbuild-->
-    <script>
-      var ctx = $("#myChart");
-      if (ctx) {
-      	var myChart = new Chart(ctx, {
-      	    type: 'bar',
-      	    data: {
-      	        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-      	        datasets: [{
-      	            label: '# of Votes',
-      	            data: [12, 19, 3, 5, 2, 3],
-      	            backgroundColor: [
-      	                'rgba(255, 99, 132, 0.2)',
-      	                'rgba(54, 162, 235, 0.2)',
-      	                'rgba(255, 206, 86, 0.2)',
-      	                'rgba(75, 192, 192, 0.2)',
-      	                'rgba(153, 102, 255, 0.2)',
-      	                'rgba(255, 159, 64, 0.2)'
-      	            ],
-      	            borderColor: [
-      	                'rgba(255,99,132,1)',
-      	                'rgba(54, 162, 235, 1)',
-      	                'rgba(255, 206, 86, 1)',
-      	                'rgba(75, 192, 192, 1)',
-      	                'rgba(153, 102, 255, 1)',
-      	                'rgba(255, 159, 64, 1)'
-      	            ],
-      	            borderWidth: 1
-      	        }]
-      	    },
-      	    options: {
-      	        scales: {
-      	            yAxes: [{
-      	                ticks: {
-      	                    beginAtZero:true
-      	                }
-      	            }]
-      	        }
-      	    }
-      	});
-      }
-    </script>
   </body>
 </html>

@@ -39,7 +39,7 @@
     .captcha-image {
       display: inline-block;
       vertical-align: middle;
-      border-radius: 3px;
+      border-radius: 6px;
       &+input {
         // display: inline-block;
         // vertical-align: middle;
@@ -53,7 +53,7 @@ textarea {
   box-sizing: border-box;
   height: 44px;
   background-color: $white;
-  border-radius: 3px;
+  border-radius: 6px;
   padding: 1em;
   outline: none;
   min-height: 200px;
@@ -74,7 +74,7 @@ input[type=color], input[type=time],input[type=datetime],input[type=time],input[
   background-color: $white;
   padding: 0 .4em;
   outline: none;
-  border-radius: 3px;
+  border-radius: 6px;
   &:focus {
     border: 1px solid $gray;
     background-color: $smokygray;
@@ -92,8 +92,12 @@ input[type=color], input[type=time],input[type=datetime],input[type=time],input[
   }
   &:read-only {
     color: darken($gray, 15%);
-    background-color: $lightgray;
+    background-color: $smokygray;
   }
+}
+//Date
+input.pick-date, input.pick-time {
+  cursor: pointer;
 }
 //Color
 input[type=color] {
@@ -130,7 +134,7 @@ input[type=file] {
       pointer-events: none;
     }
     span {
-      border-radius: 0 3px 3px 0;
+      border-radius: 0 6px 6px 0;
       color: white;
       background-color: $main;
       height: $input-height;
@@ -154,7 +158,7 @@ input[type=file] {
       background-color: $white;
       padding: 0 .4em;
       outline: none;
-      border-radius: 3px;
+      border-radius: 6px;
     }
   }
 }
@@ -204,7 +208,7 @@ input[disabled] {
     background-repeat: no-repeat;
     box-sizing: border-box;
     border: 1px solid $gray;
-    border-radius: 3px;
+    border-radius: 6px;
     height: $input-height;
     padding: .3em 3em .3em .3em;
     background-color: $white;
