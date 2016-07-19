@@ -1,0 +1,26 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 jQuery Magnific Popup
+						small
+							|	multi-purose popup you ever need 1.1.0 / See 
+							a(href='http://dimsemenov.com/plugins/magnific-popup/' target='_blank') documention.
+							|	 here
+					h3 Example
+					h4 Single Image
+					a.btn.basic.image-pop(href='images/weypro.png') OPEN ABC
+					
+					pre
+						code.language-jade.
+							a.btn.basic.image-pop(href='images/weypro.png') OPEN ABC
+					h4 AJAX
+					p coming soon ..
