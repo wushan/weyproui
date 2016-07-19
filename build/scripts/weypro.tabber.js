@@ -75,6 +75,3 @@
   //Private Function
   
 })(jQuery);
-
-//Tabber Trigger
-$('#tabber').tabber();

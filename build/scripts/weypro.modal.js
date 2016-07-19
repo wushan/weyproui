@@ -226,4 +226,3 @@
     $(this).modal();
   });
 })(jQuery);
-
