@@ -17,7 +17,7 @@ block content
 							|	 here
 
 					h3 Default Usage
-					table.rowed.table-hover.list-table.data-tables.normal
+					table.rowed.table-hover.list-table.data-tables.normal.display.nowrap(width='100%')
 						thead
 							tr.centered
 								th(width='5%') A
@@ -42,7 +42,7 @@ block content
 					p Add class : 'data-tables','normal'
 					pre
 						code.language-jade.
-							table.rowed.table-hover.list-table.data-tables.normal
+							table.rowed.table-hover.list-table.data-tables.normal(width='100%')
 								thead
 									tr.centered
 										th(width='5%') A
@@ -79,9 +79,31 @@ block content
 
 
 
-
+					h3 Responsive(super wide table)
+					table.rowed.table-hover.list-table.data-tables.normal.responsive.display.nowrap(width='100%')
+						thead
+							tr.centered
+								each i in Array(3)
+									th A
+									th B	
+									th C
+									th D
+									th E
+									th F
+								th
+						tbody
+							each i in Array(10)
+								tr
+									each i in Array(3)
+										td 00000-00000
+										td 00000-00000
+										td 00000-00000
+										td 00000-00000
+										td 00000-00000
+										td 00000-00000
+									td
 					h3 Draggable
-					table.rowed.table-hover.list-table.data-tables.draggable
+					table.rowed.table-hover.list-table.data-tables.draggable.display.nowrap(width='100%')
 						thead
 							tr.centered
 								th(width='5%') A

@@ -42,19 +42,19 @@
 			container.stop(true, true).toggleClass('sidebar-active');
 		})
 
-		// Aside Controll
-		if (getBrowserWidth() > 768) {
-			container.addClass('sidebar-active');
-		} else {
-			container.removeClass('sidebar-active');
-		}
-		$(window).resize(function(){
-			asideContainer.css('padding-top', $('.header-inner').outerHeight());
-			if (getBrowserWidth() > 768) {
-				container.addClass('sidebar-active');
-			} else {
-				container.removeClass('sidebar-active');
-			}
-		})
+		// // Aside Controll
+		// if (getBrowserWidth() > 768) {
+		// 	container.addClass('sidebar-active');
+		// } else {
+		// 	container.removeClass('sidebar-active');
+		// }
+		// $(window).resize(function(){
+		// 	asideContainer.css('padding-top', $('.header-inner').outerHeight());
+		// 	if (getBrowserWidth() > 768) {
+		// 		container.addClass('sidebar-active');
+		// 	} else {
+		// 		container.removeClass('sidebar-active');
+		// 	}
+		// })
 	}());
 })();

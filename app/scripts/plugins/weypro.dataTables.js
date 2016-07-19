@@ -2,10 +2,18 @@
 $('.data-tables.normal').DataTable({
 	paging: true,
 	"pagingType": "full",
-	select: {
-    	style: 'multi'
-    },
-	ordering: true
+	ordering: true,
+    responsive: {
+            details: {
+                type: 'column',
+                target: -1
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   -1
+        } ]
 });
 
 $('.data-tables.draggable').DataTable({
@@ -15,7 +23,18 @@ $('.data-tables.draggable').DataTable({
 		selector: 'td:first-child',
 		dataSrc: 'td:first-child'
 	},
-	ordering: true
+	ordering: true,
+    responsive: {
+            details: {
+                type: 'column',
+                target: -1
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   -1
+        } ]
 });
 
 var fullOptions = {
