@@ -7,6 +7,7 @@ table {
 	text-align: left;
 	border: 1px solid $lightgray;
 	background-color: $white;
+	border-collapse: collapse;
 	thead {
 		tr {
 			border-bottom: 1px solid $gray;
@@ -34,6 +35,15 @@ table {
 						background-color: #FFEAEA;
 					}
 				}
+			}
+		}
+		//Row highligt color
+		&.highlight {
+			background-color: $red;
+			color: $white;
+			th,td {
+				background-color: transparent !important;
+				border: 0 !important;
 			}
 		}
 	}
