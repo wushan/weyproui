@@ -39,8 +39,8 @@ table {
 		}
 		//Row highligt color
 		&.highlight {
-			background-color: $red;
-			color: $white;
+			background-color: $red !important;
+			color: $white !important;
 			th,td {
 				background-color: transparent !important;
 				border: 0 !important;
