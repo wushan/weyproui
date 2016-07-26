@@ -1,0 +1,75 @@
+.notify {
+	border: 1px solid $gray;
+	border-radius: 6px;
+	padding: 1em 2.8em;
+	box-sizing: border-box;
+	background-color: lighten($gray, 15%);
+	position: relative;
+	&:hover {
+		@extend .transition;
+		box-shadow: 0 3px 6px -3px rgba(0,0,0,0.66);
+	}
+	i {
+		position: absolute;
+		left: 1em;
+		top: 50%;
+		margin-top: -7px;
+	}
+	a,i {
+		display: block;
+		color: $black;
+	}
+	&+.notify {
+		margin-top: .5em;
+	}
+	&.blue {
+		border: 1px solid $blue;
+		background-color: lighten($blue, 15%);
+		&:hover {
+			background-color: $blue;
+		}
+		a,i {
+			color: $white;
+		}
+	}
+	&.green {
+		border: 1px solid $green;
+		background-color: lighten($green, 15%);
+		&:hover {
+			background-color: $green;
+		}
+		a,i {
+			color: $white;
+		}
+	}
+	&.red {
+		border: 1px solid $red;
+		background-color: lighten($red, 15%);
+		&:hover {
+			background-color: $red;
+		}
+		a,i {
+			color: $white;
+		}
+	}
+	&.orange {
+		border: 1px solid $orange;
+		background-color: lighten($orange, 15%);
+		&:hover {
+			background-color: $orange;
+		}
+		a,i {
+			color: $white;
+		}
+	}
+	&.purple {
+		border: 1px solid $purple;
+		background-color: lighten($purple, 15%);
+		&:hover {
+			background-color: $purple;
+		}
+		a,i {
+			color: $white;
+		}
+	}
+}

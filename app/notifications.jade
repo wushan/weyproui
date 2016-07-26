@@ -1,0 +1,56 @@
+extends layouts/default
+include layouts/mixin/_mixin
+
+block content
+	main.with-aside
+		aside
+			.aside-inner
+				nav.navigation
+					include layouts/menu
+		#main
+			section
+				.container.restrict
+					h1 Notifications
+					h5 Notifyer
+					.notification-center
+						.notify
+							i.fa.fa-bell-o
+							a(href='javascript:;') SUMMER SALE ! 20% OFF 
+						.notify.red
+							i.fa.fa-exclamation
+							a(href='javascript:;') SUMMER SALE ! 20% OFF 
+						.notify.blue
+							i.fa.fa-bell-o
+							a(href='javascript:;') SUMMER SALE ! 20% OFF 
+						.notify.green
+							i.fa.fa-envelope-o
+							a(href='javascript:;') SUMMER SALE ! 20% OFF 
+						.notify.orange
+							i.fa.fa-bell-o
+							a(href='javascript:;') SUMMER SALE ! 20% OFF 
+						.notify.purple
+							i.fa.fa-bell-o
+							a(href='javascript:;') SUMMER SALE ! 20% OFF
+
+
+					pre
+						code.language-jade.
+							ul.gallery.six
+								li
+									.thumb
+										a(href='javascript:;')
+											img(src='http://placehold.it/400x225')
+									.caption.centered
+										a(href='javascript:;')
+											.title fileName
+							ul.gallery.four
+								li
+									.thumb
+										a(href='javascript:;')
+											img(src='http://placehold.it/400x225')
+									.caption
+										.title
+											a(href='javascript:;')
+												h4 Some titles
+										.description
+											+lipsum(1,'sentences')

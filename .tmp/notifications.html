@@ -130,79 +130,35 @@
         <div id="main">
           <section>
             <div class="container restrict">
-              <h1>Grid System<small>12 columns for super fast use</small></h1>
-              <p>Use<code>.grid</code>+<code>.g-x-12</code> for the magic</p>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-1-12">.g-1-12</div>
+              <h1>Notifications</h1>
+              <h5>Notifyer</h5>
+              <div class="notification-center">
+                <div class="notify"><i class="fa fa-bell-o"></i><a href="javascript:;">SUMMER SALE ! 20% OFF </a></div>
+                <div class="notify red"><i class="fa fa-exclamation"></i><a href="javascript:;">SUMMER SALE ! 20% OFF </a></div>
+                <div class="notify blue"><i class="fa fa-bell-o"></i><a href="javascript:;">SUMMER SALE ! 20% OFF </a></div>
+                <div class="notify green"><i class="fa fa-envelope-o"></i><a href="javascript:;">SUMMER SALE ! 20% OFF </a></div>
+                <div class="notify orange"><i class="fa fa-bell-o"></i><a href="javascript:;">SUMMER SALE ! 20% OFF </a></div>
+                <div class="notify purple"><i class="fa fa-bell-o"></i><a href="javascript:;">SUMMER SALE ! 20% OFF</a></div>
               </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-2-12">.g-2-12</div>
-              </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-3-12">.g-3-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-3-12">.g-3-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-3-12">.g-3-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-3-12">.g-3-12</div>
-              </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-4-12">.g-4-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-4-12">.g-4-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-4-12">.g-4-12</div>
-              </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-5-12">.g-5-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-7-12">.g-7-12</div>
-              </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-6-12">.g-6-12</div>
-                <div style="background-color: #eeeeee;" class="grid g-6-12">.g-6-12</div>
-              </div>
-              <div class="row centered">
-                <div style="background-color: #eeeeee;" class="grid g-6-12">
-                  <div class="row centered">
-                    <div style="background-color: #dddddd;" class="grid g-6-12">&nbsp;</div>
-                    <div style="background-color: #dddddd;" class="grid g-6-12">
-                      <div class="row centered">
-                        <div style="background-color: #cccccc;" class="grid g-6-12">.g-6-12</div>
-                        <div style="background-color: #cccccc;" class="grid g-6-12">.g-6-12</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div style="background-color: #eeeeee;" class="grid g-6-12">
-                  <div class="row centered">
-                    <div style="background-color: #dddddd;" class="grid g-6-12">&nbsp;</div>
-                    <div style="background-color: #dddddd;" class="grid g-6-12">
-                      <div class="row centered">
-                        <div style="background-color: #cccccc;" class="grid g-6-12">.g-6-12</div>
-                        <div style="background-color: #cccccc;" class="grid g-6-12">.g-6-12</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <pre><code class="language-jade">.row
-	.grid.g-6-12
-	.grid.g-6-12
-
-
-	</code></pre>
+              <pre><code class="language-jade">ul.gallery.six
+	li
+		.thumb
+			a(href='javascript:;')
+				img(src='http://placehold.it/400x225')
+		.caption.centered
+			a(href='javascript:;')
+				.title fileName
+ul.gallery.four
+	li
+		.thumb
+			a(href='javascript:;')
+				img(src='http://placehold.it/400x225')
+		.caption
+			.title
+				a(href='javascript:;')
+					h4 Some titles
+			.description
+				+lipsum(1,'sentences')</code></pre>
             </div>
           </section>
         </div>
