@@ -26,7 +26,15 @@ $purple:					#732ebf;
 
 //Set Single Main Color
 // $main: #1565c0; //#16B590
+//Default
 $main: 						#3c434c;
+$text-hover: 				shade( $main, 20% );
+$background-hover: 			shade( $main, 20% );
+$body-background: 			$smokygray;
+
+//NAK
+$main-nak: 					#008569;
+$main-nak-opsite: 			#ed9f2d;
 $text-hover: 				shade( $main, 20% );
 $background-hover: 			shade( $main, 20% );
 $body-background: 			$smokygray;
