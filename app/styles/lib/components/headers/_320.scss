@@ -23,7 +23,7 @@ header {
 		}
 	}
 	#brand {
-		@include span(6 of 12);
+		@include span(4 of 12);
 		h6 {
 			color: $white;
 			margin: 0;
@@ -42,7 +42,7 @@ header {
 	#miscellaneous {
 		text-align: right;
 		color: $white;
-		@include span(6 of 12 last);
+		@include span(8 of 12 last);
 		a {
 			color: $white;
 			display: inline-block;

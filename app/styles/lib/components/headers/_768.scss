@@ -1,0 +1,10 @@
+@include susy-breakpoint(768px, 12) {
+	header {
+		#brand {
+			@include span(3 of 12);
+		}
+		#miscellaneous {
+			@include span(9 of 12 last);
+		}
+	}
+}
