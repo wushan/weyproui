@@ -60,13 +60,24 @@ header {
 }
 
 //Color Preset
-#wrapper {
+#wrapper.nak {
 	header {
 		.header-inner {
 			background-color: $main-nak-opsite;
 		}
 		.head-bar {
 			background-color: $main-nak;
+			color: $black;
+		}
+		#brand {
+			a {
+				color: $black;
+			}
+		}
+		#miscellaneous {
+			a {
+				color: $black;
+			}
 		}
 	}
 }
