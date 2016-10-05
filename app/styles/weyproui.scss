@@ -29,8 +29,11 @@
 @import 'vendor/prism';
 @import 'vendor/jquery.modal';
 @import 'vendor/jquery.mCustomScrollbar';
-@import 'vendor/datepicker/classic';
-@import 'vendor/datepicker/classic.date';
-@import 'vendor/datepicker/classic.time';
+// @import 'vendor/datepicker/classic';
+@import 'vendor/datepicker/default';
+// @import 'vendor/datepicker/classic.date';
+@import 'vendor/datepicker/default.date';
+// @import 'vendor/datepicker/classic.time';
+@import 'vendor/datepicker/default.time';
 @import 'vendor/fontawesome/font-awesome';
 @import 'bower_components/magnific-popup/dist/magnific-popup';

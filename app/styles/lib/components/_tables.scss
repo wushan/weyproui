@@ -23,6 +23,13 @@ table {
 			&:last-child {
 				border-right: 0;
 			}
+			&.highlight {
+				border-top: 2px solid $red !important;
+				border-left: 2px solid $red !important;
+				border-right: 2px solid $red !important;
+				border-bottom: 2px solid $red !important;
+				color: $red !important;
+			}
 		}
 		//Row Selected
 		&.selected {
