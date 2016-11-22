@@ -91,7 +91,7 @@ input[type=color], input[type=time],input[type=datetime],input[type=time],input[
     width: calc( 100% - 94px );
   }
   &:read-only {
-    color: darken($gray, 15%);
+    color: $black;
     background-color: $smokygray;
   }
 }

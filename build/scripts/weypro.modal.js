@@ -1,8 +1,18 @@
 /*
     A simple jQuery modal (http://github.com/kylefox/jquery-modal)
-    Version 0.7.0
+    Version 0.7.3
 */
-(function($) {
+
+(function (factory) {
+  // Making your jQuery plugin work better with npm tools
+  // http://blog.npmjs.org/post/112712169830/making-your-jquery-plugin-work-better-with-npm
+  if(typeof module === "object" && typeof module.exports === "object") {
+    factory(require("jquery"), window, document);
+  }
+  else {
+    factory(jQuery, window, document);
+  }
+}(function($, window, document, undefined) {
 
   var modals = [],
       getCurrent = function() {
@@ -185,6 +195,8 @@
     return modals.length > 0;
   }
 
+  $.modal.getCurrent = getCurrent;
+
   $.modal.defaults = {
     closeExisting: true,
     escapeClose: true,
@@ -225,4 +237,4 @@
     event.preventDefault();
     $(this).modal();
   });
-})(jQuery);
+}));
